@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "proxy": {
+    "url": "http://127.0.0.1:7890",
+    "noProxy": ["localhost", "127.0.0.1", "::1"],
+    "chromiumBypassList": "<local>;localhost;127.0.0.1;[::1]",
+    "connectTimeoutMs": 1500
+  },
+  "apps": [
+    {
+      "id": "chrome",
+      "name": "Chrome (Mihomo Proxy)",
+      "enabled": true,
+      "autoDetect": "chrome",
+      "executable": "",
+      "strategy": "chromium",
+      "profileDirectory": "",
+      "preventMultipleInstances": true,
+      "arguments": [],
+      "environment": {}
+    },
+    {
+      "id": "codex",
+      "name": "Codex (Mihomo Proxy)",
+      "enabled": true,
+      "autoDetect": "codex",
+      "executable": "",
+      "strategy": "both",
+      "profileDirectory": "",
+      "preventMultipleInstances": true,
+      "arguments": [],
+      "environment": {}
+    },
+    {
+      "id": "example_app",
+      "name": "Example App (Mihomo Proxy)",
+      "enabled": false,
+      "executable": "%LOCALAPPDATA%\\Programs\\ExampleApp\\ExampleApp.exe",
+      "strategy": "environment",
+      "preventMultipleInstances": true,
+      "arguments": [],
+      "environment": {}
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# Per-machine configuration, generated shortcuts, and local output.
+config.local*.json
+*.lnk
+*.log
+local/
+.test-output/
